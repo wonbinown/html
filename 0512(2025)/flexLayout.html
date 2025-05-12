@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexLayout.html</title>
+    <style>
+        nav{
+            border:1px solid red;
+            /* text-align: center; */
+        }
+        ul{
+            border:1px solid greenyellow;
+            display:flex;
+            list-style-type: none;
+            padding:0px;
+            flex-direction:row;
+            text-align:center;
+            /* justify-content:center; */
+             justify-content:space-around; 
+            /* justify-content:space-between; */
+            flex-wrap:wrap; 
+            
+        }
+        li{
+            width:500px;
+            border:1px solid black;
+            /* display:inline; */
+        }
+        @media screen and (min-width:800px) { 
+            ul{flex-direction:column;}
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+        <li>메뉴1</li>
+        <li>메뉴2</li>
+        <li>메뉴3</li>
+        <li>메뉴4</li>
+        </ul>
+    </nav>
+</body>
+</html>
